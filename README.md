@@ -7,12 +7,12 @@ Originally built for my **Bioinformatics coursework** and later **refined and po
 
 ---
 
-##  What it does
+##  Core principles
 The script reads your sequence as text.
-- **Complement** a DNA sequence: A ↔ T, C ↔ G  
-- **Transcribe** DNA → RNA: T → U
-- **Translate** RNA → Protein: 3 RNA letters (a codon) → 1 amino acid  
-- **Insert a random substitution** in a protein (single amino-acid mutation)
+- **Complements** a DNA sequence: A ↔ T, C ↔ G  
+- **Transcribes** DNA → RNA: T → U
+- **Translates** RNA → Protein: 3 RNA letters (a codon) → 1 amino acid  
+- **Inserts a random substitution** in a protein (single amino-acid mutation)
 
 ---
 
@@ -26,38 +26,42 @@ python seq_cli_purepython.py
 ---
 ##  Concrete examples (input → output)
 
-1) Complement (DNA → DNA)
+### 1) Complement (DNA → cDNA)
 
 The user enters a DNA sequence, chooses 1: Complement.
 
 Input (DNA): ACGGCCTTGCCTAAACCGGGC
+
 Output (Complement): TGCCGGAACGGATTTGGCCCG
 
 ![Complement Example](assets/dna_complement.png)
 
-2) Transcribe (DNA → RNA)
+### 2) Transcribe (DNA → RNA)
 
 Choose 2: Transcribe.
 
 Input (DNA): ACGGCCTTGCCTAAACCGGGC
+
 Output (RNA): ACGGCCUUGCCUAAACCGGGC
 
 ![Transcribe Example](assets/dna_transcribe.png)
 
-3) Translate (RNA → Protein)
+### 3) Translate (RNA → Protein)
 
 Choose 3: Translate.
 
 Input (RNA): ACGGCCUUGCCUAAACCGGGC
+
 Output (Protein): TALPKPG
 
 ![Translate Example](assets/rna_translate.png)
 
-4) Mutate (Protein → Protein with 1 substitution)
+### 4) Mutate (Protein → Protein with 1 substitution)
 
 Choose 4: Insert a random mutation.
 
 Input (Protein): TALPKPG
+
 Output (Mutated Protein): e.g., TALFKPG (position & new AA are random; output varies)
 
 ![Mutation Example](assets/mutated_protein.png)
